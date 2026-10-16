@@ -35,6 +35,38 @@
         </div>
 
     </header>
+
+    <div class="mobile-navigation" aria-label="mobile-navigation">
+        <input type="checkbox" id="toggler-id" class="mobile-navigation-toggler">
+
+    <label for="toggler-id" class="burger" aria-label="Open menu"></label>
+
+    <nav class="mobile-navigation-menu" aria-label="mob header navigation">
+                <ul class="mobile-navigation-list" aria-label="mob header navigation list">
+                    <li>
+                        <a href="#home-id" class="mobile-navigation-link" aria-label="link to home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about-id" class="mobile-navigation-link" aria-label="link to about">About</a>
+                    </li>
+                    <li>
+                        <a href="#history-id" class="mobile-navigation-link" aria-label="link to history">History</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio-id" class="mobile-navigation-link" aria-label="link to portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contacts-id" class="mobile-navigation-link" aria-label="link to contacts">Contacts</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+
+        
+
+    </div>
+
     <main aria-label="main">
         <section class="home" aria-label="home section" id="home-id">
             <div class="container">
@@ -51,7 +83,7 @@
                 <p class="about_description-ru" aria-label="about description ru">Будучи художником с мировой известностью, Иван Константинович Айвазовский предпочитал жить и работать на своей родине — в Крыму. Айвазовский наиболее известен своими морскими пейзажами, которые составляют больше половины его работ. Художник считается одним из величайших маринистов всех времён.</p>
 
 
-                <hr class="devider" area-label="devider">
+                <hr class="devider" aria-label="devider">
 
 
                 <h3 class="about_subtitle-en" aria-label="about subtitle en">Ivan Konstantinovich Aivazovsky - Russian marine painter of Armenian origin, collector, philanthropist.</h3>
@@ -80,26 +112,22 @@
 
         </section>
     </main>
-    <footer class="contacts" arial-label="contacts section" id="contacts-id">
+    <footer class="contacts" aria-label="contacts section" id="contacts-id">
         <div class="conteiner">
             <h2 class="contacts-title">Contacts</h2>
             <button class="contacts-button">
                 <a href="https://ivanaivazovsky.arthive.com/" class="button-link">ayvazovski</a>
             </button>
 
-            <address class="socials" aria-label="social-icons">
-            <a href="https://youtube.com" target="_blank" aria-label="link to youtube">
-                <svg class="social-icon" arial-label="youtube-icon">
-                    <use href="accets/sprites.svg#youtube-icon"></use>
-                </svg>
-            </a>
+            <div class="socials" aria-label="social-icons">
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/YouTube_SVG.webp">
+                </a>
 
-            <a href="https://linkedin.com" target="_blank" aria-label="link to linkdn">
-                <svg class="social-icon" arial-label="linkdn-icon">
-                    <use href="accets/sprites.svg#youtube-icon"></use>
-                </svg>
-            </a>
-            </address>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/Linkedin_SVG.webp">
+                </a>
+            </div>
             
             <p class="contacts-info" aria-label="just for notice">
                 More works you can see in these social networks

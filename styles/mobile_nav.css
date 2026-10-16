@@ -1,0 +1,118 @@
+.mobile-navigation {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: -400px;
+}
+
+.mobile-navigation-toggler {
+    display: none;
+}
+
+
+.burger {
+    display: none;
+    position: relative;
+    width: 33px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 110;
+}
+
+.burger::before,
+.burger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background: #000;
+    transition: transform 0.3s ease, top 0.3s ease, bottom 0.3s ease, box-shadow 0.3s ease;
+}
+
+.burger::before {
+    top: 0;
+    box-shadow: 0 11px 0 #000;
+}
+
+.burger::after {
+    bottom: 0;
+}
+
+
+.mobile-navigation-menu {
+    visibility: hidden;
+}
+
+
+.mobile-navigation-toggler:checked ~ .mobile-navigation-menu {
+    visibility: visible;
+}
+
+
+@media (max-width: 480px) {
+    .mobile-navigation {
+        display: block;
+        position: relative;
+        z-index: 100;
+    }
+
+
+    .burger {
+        display: block; 
+    }
+
+
+    .mobile-navigation-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: #1e1e2e;
+        padding: 100px 40px 40px;
+        transition: right 0.4s ease;
+        z-index: 105;
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+
+    .mobile-navigation-list {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+
+    .mobile-navigation-link {
+        color: #fff;
+        font-size: 20px;
+        transition: color 0.2s;
+    }
+
+
+     .mobile-navigation-link:hover {
+        color: #f9e2af;
+    }
+
+      /* Меню выезжает */
+    .mobile-navigation-toggler:checked ~ .mobile-navigation-menu {
+        right: 0;
+    }
+
+
+    /* Бургер → крестик */
+    .mobile-navigation-toggler:checked ~ .burger::before {
+        top: 11px;
+        transform: rotate(45deg);
+        box-shadow: none;
+    }
+
+
+    .mobile-navigation-toggler:checked ~ .burger::after {
+        bottom: 11px;
+        transform: rotate(-45deg);
+    }
+}
