@@ -1,8 +1,5 @@
 .mobile-navigation {
     display: none;
-    position: absolute;
-    top: 30px;
-    right: -400px;
 }
 
 .mobile-navigation-toggler {
@@ -54,9 +51,12 @@
 
 @media (max-width: 480px) {
     .mobile-navigation {
-        display: block;
+        display:flex;
+       /* display: block;*/
         position: relative;
         z-index: 100;
+        padding: 20px;
+        justify-content: flex-end;
     }
 
 
@@ -83,6 +83,9 @@
         display: flex;
         flex-direction: column;
         gap: 25px;
+        width: 100%;     
+        max-width: 100%;
+        overflow-wrap: break-word;
     }
 
 

@@ -18,7 +18,7 @@
 }
 
 
-.nav_list {
+.nav-list {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -26,7 +26,7 @@
 }
 
 
-.nav_link {
+.nav-link {
     color: var(--font-color-grey);
     font-size: 18px;
     font-weight: 700;
@@ -35,7 +35,7 @@
 }
 
 
-.nav_link::after {
+.nav-link::after {
     content: "";
     position: absolute;
     left: 0;
@@ -46,11 +46,11 @@
     transition: right .22s;
 }
 
-.nav_link:hover {
+.nav-link:hover {
     color: var(--color-main-black);
 }
 
-.nav_link:hover::after {
+.nav-link:hover::after {
     right: 0;
 }
 
